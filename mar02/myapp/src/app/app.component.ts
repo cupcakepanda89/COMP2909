@@ -1,34 +1,28 @@
 import { Component } from '@angular/core';
-
-/**
- * Component architecture pairs up a view and a class which contains logic and data to support the view
- * selector is an html tag
- */
-
-/**
- * Component has two things.
- * 1. Component decorator which informs app how to process file.
- * 2. Class which defines data structures and logic
- */
-
-//1. Component decorator which informs app how to process file.
+// Custom class
+export class PlayingCard {
+    cardVal: string;
+    suit:    string;
+}
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    // Multi-line content is allowed with back ticks.
+    template: `<h1>Hello world!  {{title}} <br/>
+	       {{card.cardVal}} of {{card.suit}} and<br/>
+           {{card1.cardVal}} of {{card1.suit}}
+    </h1>`
 })
-//2. Class which defines data structures and logic
-export class AppComponent {
-  //Here is some data
-  title = 'app'; // variable or property or model
-  lastName = 'Truong';
-  firstName = 'Katelyn';
-    /**
-     * models - store data
-     */
 
-  // Here is some logic
-  myfunction() {
-    alert("hi");
-  }
+export class AppComponent {
+    public title = 'This is Angular!';
+
+    // Declare and initialize a PlayingCard object.
+    public card: PlayingCard = {
+        cardVal: "Ace",
+        suit: "Spades"
+    };
+    public card1: PlayingCard = {
+        cardVal: "Queen",
+        suit: "Diamond"
+    };
 }
