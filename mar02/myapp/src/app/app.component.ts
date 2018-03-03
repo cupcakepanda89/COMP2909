@@ -21,7 +21,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   //Here is some data
   title = 'app'; // variable or property or model
-
+  lastName = 'Truong';
+  firstName = 'Katelyn';
     /**
      * models - store data
      */
