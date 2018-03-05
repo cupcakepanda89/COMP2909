@@ -8,19 +8,20 @@ export class PlayingCard {
 @Component({
     selector: 'app-root',
     // Multi-line content allowed with back ticks.
-    template: `<h1>Hello world!  {{title}}</h1> <br/>
-              <!-- Show cards in unordered list.
-              <ul><li *ngFor="let card of cards">{{card.cardVal}}</li></ul> -->
+    template: `<h1>Hello world! {{title}}</h1> <br/>
+    <!-- Show cards in unordered list.
+    <ul><li *ngFor="let card of cards">{{card.cardVal}}</li></ul> -->
 
-        <table>
-            <tr>
-                <td>Card Value</td>
-                <td>Card Suit</td>
-            </tr>
-            <tr *ngFor="let card of cards">
-                <td>{{card.cardVal}}</td>
-            </tr>
-        </table>
+    <table style="border: 1px black solid">
+        <tr>
+            <th width="100px" style="border: 1px black solid; background-color: #dfdedd">Card Value</th>
+            <th width="100px" style="border: 1px black solid; background-color: #dfdedd">Card Suit</th>
+        </tr>
+        <tr *ngFor="let card of cards">
+            <td width="100px" style="border: 1px black solid">{{card.cardVal}}</td>
+            <td width="100px" style="border: 1px black solid">{{card.suit}}</td>
+        </tr>
+    </table>
     `
 })
 
@@ -35,4 +36,5 @@ let CARDS: PlayingCard[] = [
     { cardVal: "Ace", suit: "Spades" },
     { cardVal: "Two", suit: "Clubs" },
     { cardVal: "Six", suit: "Hearts" },
+    { cardVal: "Queen", suit: "Diamond" },
 ];
