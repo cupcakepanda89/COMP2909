@@ -1,41 +1,44 @@
 import { Component } from '@angular/core';
 
-export class PlayingCard {
-    cardVal: string;
-    suit: string;
-}
-
 @Component({
     selector: 'app-root',
-    // Multi-line content allowed with back ticks.
-    template: `<h1>Hello world!  {{title}} </h1><br/>
-              <!-- Show cards in unordered list. -->
-              <ul><li *ngFor="let card of cards" (click)="onSelect(card)">
-                  {{card.cardVal}}</li>
-             </ul>
-             <div *ngIf="selectedCard">
-                 <h2>{{selectedCard.cardVal}} **</h2>
-                 <input [(ngModel)]="selectedCard.cardVal" placeholder="name"/>
-              </div>
-			  `
+    template:
+        `
+<section>
+<form  (ngSubmit)="onSubmit()" #myForm="ngForm">
+        First Name:
+        <input type="text" pattern="[a-zA-Z ]*" minlength="3" required 
+         [(ngModel)]="myName" name="firstName" #firstName="ngModel" >
+        <div [hidden]="firstName.valid || firstName.pristine">
+            This control is invalid.</div>
+        <p *ngIf="firstName?.errors?.required">This field is required.</p>
+        <p *ngIf="firstName?.errors?.pattern">
+            Only alphabetical characters are allowed.</p>
+        <p *ngIf="firstName?.errors?.minlength">
+            This entry must have at least three characters.</p>  
+        <br><br>
+        Last Name:
+        <input type="text" pattern="[a-zA-Z ]*" minlength="2" required
+               [(ngModel)]="lName" name="lastName" #lastName="ngModel" >
+        <div [hidden]="lastName.valid || lastName.pristine">
+            This control is invalid.</div>
+        <p *ngIf="lastName?.errors?.required">This field is required.</p>
+        <p *ngIf="lastName?.errors?.pattern">
+            Only alphabetical characters are allowed.</p>
+        <p *ngIf="lastName?.errors?.minlength">
+            This last name entry must have at least two characters.</p><br>
+      <button type="submit" class="btn btn-default" 
+       [disabled]="!myForm.form.valid">Submit</button>
+    </form>
+</section>
+`
 })
-
 export class AppComponent {
-    public title = 'This is Angular 4!';
-    // Include card data in class as public property.
-    public cards = CARDS;
+    myName: string;
+    lName: string;
 
-    selectedCard: PlayingCard;
-
-    onSelect(card: PlayingCard) {
-        this.selectedCard = card;
-        alert(card.suit);
+    constructor() {
+        this.myName = "Katelyn";
+        this.lName = "Truong";
     }
 }
-
-// Define card data.
-var CARDS: PlayingCard[] = [
-    { cardVal:"Ace", suit:"Spades"},
-    { cardVal:"Two", suit:"Clubs" },
-    { cardVal:"Six", suit:"Hearts"},
-];
