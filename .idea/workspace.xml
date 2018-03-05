@@ -29,18 +29,12 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mar02/myapp/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="2" />
+            <state relative-caret-position="334">
+              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
               <folding>
-                <marker date="1520225644000" expanded="true" signature="264:361" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="384:407" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="408:876" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="421:644" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="460:510" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="565:615" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="684:863" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="723:746" ph="..." />
-                <marker date="1520225644000" expanded="true" signature="807:830" ph="..." />
+                <marker date="1520226526000" expanded="true" signature="327:442" ph="..." />
+                <marker date="1520226526000" expanded="true" signature="383:423" ph="..." />
+                <marker date="1520226526000" expanded="true" signature="482:637" ph="..." />
               </folding>
             </state>
           </provider>
@@ -146,6 +140,14 @@
               <item name="COMP2909" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mar02" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="myapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="@angular" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="COMP2909" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COMP2909" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mar02" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="myapp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -218,7 +220,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9297000" />
+    <option name="totallyTimeSpent" value="10035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="111" y="23" width="1161" height="726" extended-state="0" />
@@ -348,18 +350,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mar02/myapp/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="2" />
+        <state relative-caret-position="334">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
-            <marker date="1520225644000" expanded="true" signature="264:361" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="384:407" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="408:876" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="421:644" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="460:510" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="565:615" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="684:863" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="723:746" ph="..." />
-            <marker date="1520225644000" expanded="true" signature="807:830" ph="..." />
+            <marker date="1520226526000" expanded="true" signature="327:442" ph="..." />
+            <marker date="1520226526000" expanded="true" signature="383:423" ph="..." />
+            <marker date="1520226526000" expanded="true" signature="482:637" ph="..." />
           </folding>
         </state>
       </provider>
