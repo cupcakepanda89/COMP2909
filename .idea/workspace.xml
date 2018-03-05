@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5703f8cf-d445-4e1a-98d6-36e15df513f0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mar02/myapp/src/app/app.component.ts" afterPath="$PROJECT_DIR$/mar02/myapp/src/app/app.component.ts" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mar02/myapp/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="26" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="34" column="2" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
               <folding>
                 <marker date="1520227066000" expanded="true" signature="115:1444" ph="..." />
                 <marker date="1520227066000" expanded="true" signature="164:1433" ph="..." />
@@ -227,7 +227,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10594000" />
+    <option name="totallyTimeSpent" value="11143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="111" y="23" width="1161" height="726" extended-state="0" />
@@ -357,8 +357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mar02/myapp/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="26" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="34" column="2" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
           <folding>
             <marker date="1520227066000" expanded="true" signature="115:1444" ph="..." />
             <marker date="1520227066000" expanded="true" signature="164:1433" ph="..." />
