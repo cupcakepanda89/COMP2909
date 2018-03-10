@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    template: `<h1>Hello world!  {{title}}</h1><second-directive></second-directive>`
+    selector: 'app-root', //reference the tag that pull the content
+    template: `<h1>Hello world!  {{title}}</h1>
+    <second-directive></second-directive>
+    <third-directive></third-directive>`
 })
 export class AppComponent {
     public title = 'This is Angular!';
