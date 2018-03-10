@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
     template:
             `<h1>This is the header</h1>
     <nav>
-        <a routerLink="/page-a" routerLinkActive="active">A</a> |
-        <a routerLink="/page-b" routerLinkActive="active">B</a>
+        <a routerLink="/page-a" routerLinkActive="active">page A</a> |
+        <a routerLink="/page-b" routerLinkActive="active">page B</a>
     </nav>
     <!-- Where router should display a view -->
     <router-outlet></router-outlet>`
