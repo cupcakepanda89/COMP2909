@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
     // Selector uses lower case with hyphens.
     selector: 'third-directive',
-    template: `<h3>This is the third directive!</h3>`,
+    template: `<h3>Hello from third directive!</h3>`,
 })
-export class NewDirective2 {
+export class ThirdDirective {
 }
