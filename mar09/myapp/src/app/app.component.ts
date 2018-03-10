@@ -22,9 +22,15 @@ import { Component } from '@angular/core';
 
     <!-- February 17, 2017 6:00PM -->
     <p>{{ mydate | date:'MMMM d, y h:mma' }}</p>
+    {{price | currency:'USD':true}}
     `
 })
 export class AppComponent {
     // Months start counting at 0.
     mydate = new Date(2017, 1, 17, 18, 0, 30); // October 23, 1940
+    price: number = 23.23333;
+    constructor() {
+
+    }
+
 }
