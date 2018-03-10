@@ -1,32 +1,30 @@
 import { Component } from '@angular/core';
-import { MyDataService } from './myDataService';
 
 @Component({
-    selector: 'app-root', //reference the tag that pull the content
-    template: `<h1>Hello world!  {{title}}</h1>
-    <p>{{myName}}</p>
-    <second-directive [firstName]="author"></second-directive>
-    <!--if I want to pass a string [firstName] = "author" like Some String.
-    // I have to use single quotation within double quotation
-    // [firstName]=" 'some string' " -->
-    <ul><li *ngFor="let name of names">{{name}}</li></ul>`,
-    // 'providers' allows you to create and pass an instance
-    // of the class to the constructor header.
-    providers: [MyDataService]
+    selector: 'app-root',
+    template: `<!-- Feb 17, 2017 -->
+    {{ mydate | date }}<br>
 
+    <!-- February 17, 2017 -->
+    <p>{{ mydate | date: 'yMMMMd' }}<br>
+
+        <!-- Feb 17, 2017 -->
+    <p>{{ mydate | date: 'mediumDate' }}<br>
+
+        <!-- Friday, February 17, 2017 -->
+    <p>{{ mydate | date: 'fullDate' }}<br>
+
+        <!-- 6:00 PM -->
+    <p>{{ mydate | date: 'shortTime' }}<br>
+
+        <!-- FRIDAY, FEBRUARY 17, 2017 -->
+    <p>{{ mydate | date:'fullDate' | uppercase}}</p>
+
+    <!-- February 17, 2017 6:00PM -->
+    <p>{{ mydate | date:'MMMM d, y h:mma' }}</p>
+    `
 })
 export class AppComponent {
-    public title = 'This is Angular!';
-    public author = 'Fred';
-    names: Array<any>;
-    myName: string;
-
-    // Create instance of 'MyDataService' right in the constructor
-    // header.
-    constructor(myDataService: MyDataService) {
-        // Use service to call getNames() method.
-        this.names = myDataService.getNames();
-        this.myName = myDataService.getMyName();
-
-    }
+    // Months start counting at 0.
+    mydate = new Date(2017, 1, 17, 18, 0, 30); // October 23, 1940
 }
