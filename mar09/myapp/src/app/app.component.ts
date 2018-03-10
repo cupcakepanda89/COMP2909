@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FahrenheitPipe } from './app.fahrenheitPipe';
+
 
 @Component({
     selector: 'app-root',
@@ -22,14 +24,19 @@ import { Component } from '@angular/core';
 
     <!-- February 17, 2017 6:00PM -->
     <p>{{ mydate | date:'MMMM d, y h:mma' }}</p>
-    {{price | currency:'USD':true}}
+    <p>{{price | currency:'USD':true}}</p>
+    <p>{{celsius | fahrenheitPipe }}</p>
+
     `
 })
 export class AppComponent {
     // Months start counting at 0.
     mydate = new Date(2017, 1, 17, 18, 0, 30); // October 23, 1940
     price: number = 23.23333;
+    celsius: number;
+
     constructor() {
+        this.celsius = 33;
 
     }
 
