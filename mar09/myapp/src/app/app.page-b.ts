@@ -4,7 +4,13 @@ import { ActivatedRoute, Params } from '@angular/router';
 @Component({
     template: ` <p>This is page B.</p>       
     ID: {{id}}<br/>
-    Name: {{firstName}}`
+    Name: {{firstName}}<br>
+    
+    -------<br>
+    This is page b. {{retrievedFromStorage}}
+    <input type="input"  (ngModelChange)="mychange($event)" [ngModel]="mymodel">
+
+    `
 })
 export class PageBComponent {
     id: number;
@@ -24,4 +30,9 @@ export class PageBComponent {
             this.firstName = localName;
         });
     }
+    mychange(val:string) {
+        sessionStorage.setItem("autosave", val);
+        console.log(val); // updated value
+    }
+
 }
