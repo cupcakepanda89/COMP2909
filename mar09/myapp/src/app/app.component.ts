@@ -1,43 +1,14 @@
 import { Component } from '@angular/core';
-import { FahrenheitPipe } from './app.fahrenheitPipe';
-
 
 @Component({
     selector: 'app-root',
-    template: `<!-- Feb 17, 2017 -->
-    {{ mydate | date }}<br>
-
-    <!-- February 17, 2017 -->
-    <p>{{ mydate | date: 'yMMMMd' }}<br>
-
-        <!-- Feb 17, 2017 -->
-    <p>{{ mydate | date: 'mediumDate' }}<br>
-
-        <!-- Friday, February 17, 2017 -->
-    <p>{{ mydate | date: 'fullDate' }}<br>
-
-        <!-- 6:00 PM -->
-    <p>{{ mydate | date: 'shortTime' }}<br>
-
-        <!-- FRIDAY, FEBRUARY 17, 2017 -->
-    <p>{{ mydate | date:'fullDate' | uppercase}}</p>
-
-    <!-- February 17, 2017 6:00PM -->
-    <p>{{ mydate | date:'MMMM d, y h:mma' }}</p>
-    <p>{{price | currency:'USD':true}}</p>
-    <p>{{celsius | fahrenheitPipe }}</p>
-
-    `
+    template:
+            `<h1>This is the header</h1>
+    <nav>
+        <a routerLink="/page-a" routerLinkActive="active">A</a> |
+        <a routerLink="/page-b" routerLinkActive="active">B</a>
+    </nav>
+    <!-- Where router should display a view -->
+    <router-outlet></router-outlet>`
 })
-export class AppComponent {
-    // Months start counting at 0.
-    mydate = new Date(2017, 1, 17, 18, 0, 30); // October 23, 1940
-    price: number = 23.23333;
-    celsius: number;
-
-    constructor() {
-        this.celsius = 33;
-
-    }
-
-}
+export class AppComponent { }
