@@ -7,7 +7,8 @@ import { PageDefault }           from './app.pagedefault';
 
 const appRoutes: Routes = [
     { path: 'page-a', component: PageAComponent },
-    { path: 'page-b', component: PageBComponent },
+    //{ path: 'page-b', component: PageBComponent },
+    { path: 'page-b/:id/:firstname', component: PageBComponent },
     { path: '', redirectTo: '/page-a', pathMatch: 'full' },
     { path: '**', component: PageDefault }
 ];
