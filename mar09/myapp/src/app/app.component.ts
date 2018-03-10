@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
         <a routerLink="/page-b" routerLinkActive="active">page B</a>
     </nav>
     <!-- Where router should display a view -->
-    <router-outlet></router-outlet>`
+    <router-outlet></router-outlet>
+    <footer><h3>This is my footer.</h3></footer>`
 })
 export class AppComponent { }
