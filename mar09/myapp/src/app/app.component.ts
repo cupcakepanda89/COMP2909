@@ -8,7 +8,9 @@ import { MyDataService } from './myDataService';
     <!--if I want to pass a string [firstName] = "author" like Some String.
     // I have to use single quotation within double quotation
     // [firstName]=" 'some string' " -->
-    <ul><li *ngFor="let name of names">{{name}}</li></ul>`,
+    <ul><li *ngFor="let name of names">{{name}}</li>
+        <li>{{myName}}</li>
+    </ul>`,
     // 'providers' allows you to create and pass an instance
     // of the class to the constructor header.
     providers: [MyDataService]
@@ -18,12 +20,14 @@ export class AppComponent {
     public title = 'This is Angular!';
     public author = 'Fred';
     names: Array<any>;
+    myName: string;
 
     // Create instance of 'MyDataService' right in the constructor
     // header.
     constructor(myDataService: MyDataService) {
         // Use service to call getNames() method.
         this.names = myDataService.getNames();
+        this.myName = myDataService.getMyName();
 
     }
 }
