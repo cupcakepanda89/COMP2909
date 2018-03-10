@@ -1,0 +1,9 @@
+To run any of the examples, extract the zip file into an empty folder. Navigate into 
+the same directory where the package.json file exists using either terminal or the 
+command prompt. Then run the following command to install the required packages:
+>npm install
+
+After, the packages are downloaded, run the following command to launch the application:
+>ng serve
+
+Then, navigate to http://localhost:4200 in a web browser.
