@@ -24,6 +24,8 @@ describe('myapp App', () => {
         // Test the message that is output after the button is clicked.
         var messageOutput = element(by.id('messageLabel'));
         expect(messageOutput.getText()).toEqual('It is always sunny in Boston');
+        browser.sleep(5000);
+
 
     });
 });
