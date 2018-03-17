@@ -9,6 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class AppComponent {
     title = 'app works!';
     firstName = 'Jane';
+    lastName = 'Truong';
     message: string;
     getMessage(_city: string) {
         this.message = 'It is always sunny in ' + _city;
