@@ -13,6 +13,8 @@ describe('myapp App', () => {
         // Ensure element with id='fname' has text equalling Jane.
         expect(element(by.id('fname')).getText()).toEqual('Jane');
         expect(element(by.id('lname')).getText()).toEqual('Truong');
+        let headerElement = element(by.tagName("h2"));
+        expect(headerElement.getText()).toEqual("Morning Show");
 
         // Get input element and enter the text 'Boston'.
         var cityInput = element(by.id('cityInput'));
@@ -28,4 +30,14 @@ describe('myapp App', () => {
 
 
     });
+
+    it('Testing a list of items.', () => {
+        // Get list of elements.
+        let elements = element.all(by.tagName("li"));
+        expect(elements.count()).toEqual(3);
+
+        // Check text of first element.
+        expect(elements.get(0).getText()).toEqual("Johnny");
+    })
+    browser.sleep(7000);
 });
