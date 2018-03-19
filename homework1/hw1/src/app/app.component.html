@@ -1,0 +1,46 @@
+<!--The content below is only a placeholder and can be replaced.-->
+  <h1>Welcome to my {{title}}</h1>
+<section>
+  <form  (ngSubmit)="onSubmit()" #myForm="ngForm">
+    Sum:<br>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand1" name="sumTotal" #operand1="ngModel" > <span class="bo">+</span>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand2" name="sumTotal" #operand2="ngModel" >
+    <button [hidden]="operand1.invalid && operand2.invalid" (click)="doAddition()">=</button> {{result1}}
+    <span class="error" *ngIf="operand1?.errors?.pattern && operand2?.errors?.pattern">
+      * Only number is allowed.</span>
+    <br>
+
+    Difference:<br>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand3" name="subTotal" #operand3="ngModel" > <span class="bo">-</span>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand4" name="subTotal" #operand4="ngModel" >
+    <button [hidden]="operand3.invalid && operand4.invalid" (click)="doSubract()">=</button> {{result2}}
+    <span class="error" *ngIf="operand3?.errors?.pattern && operand4?.errors?.pattern">
+      * Only number is allowed.</span>
+    <br>
+
+    Product:<br>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand5" name="mulTotal" #operand5="ngModel" > <span class="bo">*</span>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand6" name="mulTotal" #operand6="ngModel" >
+    <button [hidden]="operand5.invalid && operand6.invalid" (click)="doMultiply()">=</button> {{result3}}
+    <span class="error" *ngIf="operand5?.errors?.pattern && operand6?.errors?.pattern">
+      * Only number is allowed.</span>
+    <br>
+
+    Quotient:<br>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand7" name="diTotal" #operand7="ngModel" > <span class="bo">/</span>
+    <input type="text" pattern="[0.0-9.0]+" minlength="1" required
+           [(ngModel)]="Operand8" name="diTotal" #operand8="ngModel" >
+    <button [hidden]="operand7.invalid && operand8.invalid" (click)="doDivide()">=</button> {{result4}}
+    <span class="error" *ngIf="operand7?.errors?.pattern && operand8?.errors?.pattern">
+      * Only number is allowed.</span>
+    <br>
+  </form>
+</section>
+

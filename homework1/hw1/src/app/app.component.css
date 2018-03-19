@@ -1,0 +1,15 @@
+input{
+    width: 50px;
+    margin: 2px;
+}
+.bo{
+    margin: 2px;
+    font-weight: bolder;
+}
+button{
+    background-color: #e7e7e7;
+    margin: 5px;
+}
+.error{
+    color: red;
+}
