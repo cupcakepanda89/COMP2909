@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template:
             `<h1>This is the header</h1>
+    <second-directive></second-directive>
     <nav>
         <a routerLink="/page-a" routerLinkActive="active">page A</a> |
        <!-- <a routerLink="/page-b" routerLinkActive="active">page B</a> -->
