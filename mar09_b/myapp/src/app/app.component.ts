@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { PhonePipe} from './app.phonePipe';
 
 @Component({
   selector: 'app-root',
