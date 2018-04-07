@@ -17,8 +17,9 @@ import { Component } from '@angular/core';
     <h2>
     Welcome to {{exercise2}}!
     </h2>
-    <input type="submit" value="my button" (mouseenter)="myMouseEnter()">
-    <input type='text' (keydown)="myKeyDown($event)">
+    <input type="submit" value="my button" (mouseenter)="myMouseEnter()" (mouseleave)="myMouseLeave()"><br>
+    key down: <input type='text' (keydown)="myKeyDown($event)"> <br>
+    key up: <input type='text' (keyup)="myKeyUp($event)">
     <hr>
     <h2>
     Welcome to {{exercise3}}!
@@ -40,6 +41,25 @@ import { Component } from '@angular/core';
     <p [myHighlight]="'violet'">
         Highlight me too!
     </p>
+    <hr>
+    <h2>
+      Welcome to {{exercise6}}!
+    </h2>
+    <div (mousedown)="myMouseHandler($event, 'mouse down')" (mouseup)="myMouseHandler($event, 'mouse up')">
+    This area has<br />
+    mouse-down<br />
+    and<br />
+    mouse-up<br />
+    enabled.
+  </div>
+  Mouse Move
+  <div (mousemove)="myMouseMove($event, 'mouse down', 'mouse up')">
+    This area has<br />
+    mouse-down<br />
+    and<br />
+    mouse-up<br />
+    enabled.
+  </div>
 
       `
 
@@ -49,7 +69,14 @@ export class AppComponent {
   myMouseEnter() {
     console.log("Mouse entered!")
   }
+  myMouseLeave() {
+    console.log("Mouse left!")
+  }
   myKeyDown(event) {  
+    console.log(event)
+    console.log(event.key)
+  }
+  myKeyUp(event) {  
     console.log(event)
     console.log(event.key)
   }
@@ -72,4 +99,17 @@ export class AppComponent {
   }
 
   exercise5 = 'Attribute Directives Highlight';
+
+  exercise6 = 'Mouse Down and Mouse Up';
+  myMouseHandler(event, description) {      
+    console.log(description + " X: " 
+              + event.screenX.toString()
+              + " Y:" + event.screenY.toString())
+  }
+  myMouseMove(event, description1, description2) {      
+    console.log(description1 + " X: " 
+              + event.pageX.toString() + description2 + " Y: "
+              + event.pageY.toString())
+  }
+ 
 }
