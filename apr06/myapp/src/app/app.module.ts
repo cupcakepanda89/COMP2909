@@ -6,12 +6,15 @@ import { PageDefault }    from './app.pagedefault';
 import { PageAComponent } from './app.page-a';
 import { PageBComponent } from './app.page-b';
 import { routing }        from './app.routing';
+import { HighlightDirective } from './app.highlight.directive';
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,  PageDefault, 
-    PageAComponent, PageBComponent 
+    PageAComponent, PageBComponent,
+    HighlightDirective 
   ],
   imports: [
     BrowserModule,
