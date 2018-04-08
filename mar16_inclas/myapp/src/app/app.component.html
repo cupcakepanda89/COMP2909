@@ -1,6 +1,7 @@
 <h1>
   {{title}}
 </h1>
+<p>My Name: {{myName}}</p>
 <p id='fname'>{{firstName}}</p>
 <input type="text" id='cityInput' [(ngModel)]="city">
 <input type="submit" id="showMsgButton" (click)="getMessage(city)">
@@ -10,7 +11,6 @@
   <label id="messageLabel">{{message}}</label>
 </div>
 
-
 <app-subtitle></app-subtitle>
 <ul>
     <li *ngFor="let firstname of firstnames">
@@ -18,5 +18,11 @@
     </li>
 </ul>
 
+<h3>Morning Show</h3>
+<ul>
+  <li>Johnny</li>
+  <li>Holly</li>
+  <li>Nira</li>
+</ul>
 
 

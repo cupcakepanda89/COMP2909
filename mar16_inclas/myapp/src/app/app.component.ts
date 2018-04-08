@@ -33,4 +33,5 @@ export class AppComponent {
     this.message = 'It is always sunny in ' + _city;
   }
   lastName = 'Howard';
+  myName = 'Katelyn';
 }
