@@ -1,14 +1,22 @@
-
-  <div style="text-align:center">
-    <h1>
-        Welcome to {{title}}!!
-    </h1>
+<h1>
+  {{title}}
+</h1>
+<p id='fname'>{{firstName}}</p>
+<input type="text" id='cityInput' [(ngModel)]="city">
+<input type="submit" id="showMsgButton" (click)="getMessage(city)">
+<p id='lname'>{{lastName}}</p>
+<!-- Show is selectedCard is defined. -->
+<div *ngIf="message">
+  <label id="messageLabel">{{message}}</label>
 </div>
+
+
+<app-subtitle></app-subtitle>
 <ul>
     <li *ngFor="let firstname of firstnames">
         {{firstname}}
     </li>
 </ul>
 
-<app-subtitle></app-subtitle>
+
 

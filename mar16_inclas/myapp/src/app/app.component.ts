@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MyDataService } from './my-data.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -24,4 +25,12 @@ export class AppComponent {
         // Use service to call getNames() method.
         this.firstnames = this._myDataService.getNames();
     }
+    //
+
+  firstName = 'Jane';
+  message: string;
+  getMessage(_city: string) {
+    this.message = 'It is always sunny in ' + _city;
+  }
+  lastName = 'Howard';
 }
