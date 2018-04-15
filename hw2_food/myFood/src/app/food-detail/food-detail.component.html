@@ -1,0 +1,15 @@
+<div *ngIf="foods">
+
+  <h2>{{ foods.name | uppercase }} Details</h2>
+<!--  <div><span>id: </span>{{foods.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="foods.name" placeholder="name"/>
+    </label>
+  </div>-->
+  <b>ProductID: </b>{{foods.id}}<br>
+  <b>Product Name: </b>{{foods.name}}<br>
+  <b>Manufacturer: </b>{{foods.mfg}}<br>
+  <b>Quantity: </b>{{foods.qty}}<br>
+  <b>Size: </b>{{foods.pkg}}<br>
+</div>
