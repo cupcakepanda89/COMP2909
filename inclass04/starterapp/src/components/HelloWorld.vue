@@ -14,7 +14,14 @@
     <input type="text" v-model="myContents"><br />
     <!-- Show data using 2-way data binding. -->
     Input Value: <span v-text="myContents"></span><br />
-
+    <hr>
+    <h3>{{ msg }}</h3>
+    <input type='text' v-model='someContent'>
+    <button v-on:click="showContent(someContent)">Show the content</button>
+   <hr>
+    <h4>second text input</h4>
+    <input type='text' v-model='someText'>
+    <button v-on:click="showText(someText)">Show the text</button>
   </div>
 </template>
 
@@ -32,8 +39,18 @@
           {cardNum: 'Three', suit: 'Diamonds'}
         ],
         myContents: 'change me',
+
+      }
+    },
+    methods: {
+      showContent: function (message) {
+        alert(message)
+      },
+      showText: function (message) {
+        alert(message)
       }
     }
+
   }
 </script>
 
