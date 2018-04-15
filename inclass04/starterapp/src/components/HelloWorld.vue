@@ -2,6 +2,12 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h4>{{ subtitle}}</h4>
+    <ul>
+      <li v-for="card in cards">
+        {{card.cardNum}} {{card.suit}}
+      </li>
+    </ul>
+
   </div>
 </template>
 
@@ -12,7 +18,13 @@
       return {
         // Here is a model.
         msg: 'Welcome to Your Vue.js App',
-        subtitle: 'Katelyn Truong'
+        subtitle: 'Katelyn Truong',
+        cards: [
+          {cardNum: 'A',     suit: 'Clubs'},
+          {cardNum: 'Two',   suit: 'Hearts'},
+          {cardNum: 'Three', suit: 'Diamonds'}
+        ],
+
       }
     }
   }

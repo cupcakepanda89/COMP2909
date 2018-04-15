@@ -4,6 +4,7 @@
     <hello-world />
     <hr>
     <hello-world />
+
   </div>
 </template>
 <script>

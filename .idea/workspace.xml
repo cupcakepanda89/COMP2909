@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5703f8cf-d445-4e1a-98d6-36e15df513f0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/._inclass4_Angular.docx" afterPath="$PROJECT_DIR$/._inclass4_Angular.docx" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/inclass04/myApp" afterPath="$PROJECT_DIR$/inclass04/myApp" />
-      <change beforePath="$PROJECT_DIR$/inclass4_Angular.docx" afterPath="$PROJECT_DIR$/inclass4_Angular.docx" />
+      <change beforePath="$PROJECT_DIR$/inclass04/starterapp/src/App.vue" afterPath="$PROJECT_DIR$/inclass04/starterapp/src/App.vue" />
+      <change beforePath="$PROJECT_DIR$/inclass04/starterapp/src/components/HelloWorld.vue" afterPath="$PROJECT_DIR$/inclass04/starterapp/src/components/HelloWorld.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelloWorld.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HelloWorld.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inclass04/starterapp/src/components/HelloWorld.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inclass04/starterapp/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,8 +113,8 @@
         <option value="$PROJECT_DIR$/inclass04/myApp/src/pages/home/home.ts" />
         <option value="$PROJECT_DIR$/inclass04/myApp/src/pages/home/home.html" />
         <option value="$PROJECT_DIR$/inclass04/myApp/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/inclass04/starterapp/src/components/HelloWorld.vue" />
         <option value="$PROJECT_DIR$/inclass04/starterapp/src/App.vue" />
+        <option value="$PROJECT_DIR$/inclass04/starterapp/src/components/HelloWorld.vue" />
       </list>
     </option>
   </component>
@@ -250,12 +249,12 @@
       <workItem from="1520041927510" duration="996000" />
       <workItem from="1523226521359" duration="2506000" />
       <workItem from="1523593010037" duration="15054000" />
-      <workItem from="1523827292409" duration="491000" />
+      <workItem from="1523827292409" duration="1170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36454000" />
+    <option name="totallyTimeSpent" value="37133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="212" y="-1057" width="1345" height="1057" extended-state="0" />
@@ -545,18 +544,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inclass04/starterapp/src/components/HelloWorld.vue">
+    <entry file="file://$PROJECT_DIR$/inclass04/starterapp/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inclass04/starterapp/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/inclass04/starterapp/src/components/HelloWorld.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding />
         </state>
       </provider>
