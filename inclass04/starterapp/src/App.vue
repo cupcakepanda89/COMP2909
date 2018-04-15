@@ -2,9 +2,6 @@
   <div id="app">
     Parent
     <hello-world />
-    <hr>
-    <hello-world />
-
   </div>
 </template>
 <script>
