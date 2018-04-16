@@ -22,7 +22,14 @@
     <h4>second text input</h4>
     <input type='text' v-model='someText'>
     <button v-on:click="showText(someText)">Show the text</button>
-  </div>
+    <hr>
+    <input type='text' v-model='someCont'>
+    <div>
+      <span v-if="someCont!=''">Now you don't.</span>
+      <span v-if="someCont==''">Now you see me.</span>
+    </div>
+
+    </div>
 </template>
 
 <script>
@@ -39,7 +46,7 @@
           {cardNum: 'Three', suit: 'Diamonds'}
         ],
         myContents: 'change me',
-
+        someCont: '',
       }
     },
     methods: {
