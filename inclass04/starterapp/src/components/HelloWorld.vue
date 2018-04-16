@@ -28,7 +28,35 @@
       <span v-if="someCont!=''">Now you don't.</span>
       <span v-if="someCont==''">Now you see me.</span>
     </div>
-
+    <hr>
+    <h4>Multiple checked boxes</h4>
+    <div id='example-3'>
+      <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+      <label for="jack">Jack</label>
+      <input type="checkbox" id="john" value="John" v-model="checkedNames">
+      <label for="john">John</label>
+      <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+      <label for="mike">Mike</label>
+      <br>
+      <span>Checked names: {{ checkedNames }}</span>
+    </div>
+    <h4>Radio</h4>
+    <input type="radio" id="one" value="One" v-model="picked">
+    <label for="one">One</label>
+    <br>
+    <input type="radio" id="two" value="Two" v-model="picked">
+    <label for="two">Two</label>
+    <br>
+    <span>Picked: {{ picked }}</span>
+    <h4>Select</h4>
+    <input type="text" v-model="change">
+    <select v-model="selected">
+      <option disabled value="">Please select one</option>
+      <option><span v-text="change"></span></option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+    <span>Selected: {{ selected }}</span>
     </div>
 </template>
 
@@ -47,6 +75,10 @@
         ],
         myContents: 'change me',
         someCont: '',
+        checkedNames: [],
+        change: 'AAAA',
+        picked: [],
+        selected: ''
       }
     },
     methods: {
